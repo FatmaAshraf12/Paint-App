@@ -1,0 +1,86 @@
+.container {
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+}
+
+.svg-container {
+    width: 60%;
+    background-color: #fff;
+    display: inline-block;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.svg-styles {
+    width: 30%;
+    background-color: #a6a5a5;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    padding-bottom: 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b3b;
+
+}
+
+
+input[type="submit"] {
+    padding: 4px 16px;
+    position: relative;
+    top: -4px;
+    background-color: #1b1b3b;
+    border: 1px solid #1b1b3b;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    width: 94%;
+    margin: 0px;
+    height: 100%;
+    padding-bottom: 150px;
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-left: 30px;
+    margin: auto;
+}
+
+line,
+polyline,
+rect,
+circle {
+    fill: transparent;
+    stroke: #000;
+    stroke-width: 1px;
+}
+
+
+.buttons line,
+.buttons rect,
+.buttons polyline,
+.buttons circle {
+
+    fill: transparent;
+    stroke: #000;
+    stroke-width: 3
+}
+
+
+
+
+.erasex {
+    stroke: #fff !important;
+    stroke-width: 3px;
+    fill: transparent !important;
+
+}
+
+
+.activeBTN {
+    background-color: #fffc6c;
+}

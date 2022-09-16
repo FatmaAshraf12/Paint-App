@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Second Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="svg-container">
+            <div class="buttons">
+                <button class="polyline" onclick="mode('polyline')">
+                    <svg height="100" width="100">
+                        <polyline points="20,20 60,25 47,40 58,53 70,64 90,79"  />
+                    </svg>
+                </button>
+                <button class="line" onclick="mode('line')">
+                    <svg height="100" width="100">
+                        <line x1="0" y1="0" x2="100" y2="100"  />
+                    </svg>
+                </button>
+                <button class="rectangle"  onclick="mode('rect')">
+                    <svg height="100" width="130">
+                        <rect width="130" height="100" />
+                    </svg>
+                </button>
+                <button class="circle"  onclick="mode('circle')">
+                    <svg height="100" width="100">
+                        <circle cx="50" cy="50" r="40" />
+                    </svg>
+                </button>
+                <button class="erase" onclick="mode('erase')">
+                    <svg height="100" width="100">
+                        <polygon points="70,0 97,20 41,90 7,70"  />
+                    </svg>
+                </button>
+            </div>
+            
+            <svg height="500" width="700" style="border:1px solid red" id="svg">
+               <!--- <line class="test" x1="0" y1="0" x2="0" y2="0"  />
+                <polyline class="test" points=""   />
+                <polyline class="erase" points="" style="fill:none;stroke:#fff;stroke-width:3"/>
+                <circle class="circle" cx="0" cy="0" r="0" />
+                <rect class="rect" x="0" y="0" width="0" height="0" />-->
+            </svg>
+
+            
+        </div>
+
+        <div class="svg-styles">
+            <div class="fill-style">
+                <h4>Fill Style</h4>
+                <input type="color" id="fillColor" name="fillColor" value="#000">
+                <input type="submit" onclick="changeFillColor()">
+            </div>
+            <div class="stroke-style">
+                <h4>Stroke Style</h4>
+                <input type="color" id="strokeColor" name="strokeColor" value="#000">
+                <input type="submit"  onclick="changeStrokeColor()">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
